@@ -21,6 +21,8 @@ namespace VPProject
  
         private void Importbutton_Click(object sender, EventArgs e)
         {
+            //string format = textBox1.Text;
+            //comboBox1.Items.Add(format);
             OpenFileDialog file = new OpenFileDialog();
             if(file.ShowDialog()==DialogResult.OK)
             {
@@ -44,6 +46,7 @@ namespace VPProject
             Richtextboxpanel.Visible = true;
             var ocr = new AutoOcr();
             richTextBox.Text = ocr.Read(pictureBox.Image).ToString();
+            //richTextBox.Text = ocr.ReadPdf(axAcroPDF1.FileName).ToString();
         }
 
         private void Exitbutton2_Click(object sender, EventArgs e)
@@ -54,6 +57,26 @@ namespace VPProject
         private void Exitbutton1_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void pictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pdfImportbutton_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog file = new OpenFileDialog();
+            if (file.ShowDialog() == DialogResult.OK)
+            {
+                axAcroPDF1.Visible = true;
+                axAcroPDF1.LoadFile(file.FileName);
+            }
         }
     }
 }

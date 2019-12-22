@@ -18,15 +18,12 @@ namespace VPProject
         {
             InitializeComponent();
         }
- 
         private void Importbutton_Click(object sender, EventArgs e)
         {
-            //string format = textBox1.Text;
-            //comboBox1.Items.Add(format);
             OpenFileDialog file = new OpenFileDialog();
             if(file.ShowDialog()==DialogResult.OK)
             {
-                textBox1.Text = file.FileName;
+                textBox1.Text = file.FileName; ;
                 pictureBox.ImageLocation = textBox1.Text;
             }
         }
@@ -46,7 +43,6 @@ namespace VPProject
             Richtextboxpanel.Visible = true;
             var ocr = new AutoOcr();
             richTextBox.Text = ocr.Read(pictureBox.Image).ToString();
-            //richTextBox.Text = ocr.ReadPdf(axAcroPDF1.FileName).ToString();
         }
 
         private void Exitbutton2_Click(object sender, EventArgs e)
@@ -68,15 +64,33 @@ namespace VPProject
         {
 
         }
-
+        string path;
         private void pdfImportbutton_Click(object sender, EventArgs e)
         {
             OpenFileDialog file = new OpenFileDialog();
+            file.Filter = "pdf files|*.pdf";
             if (file.ShowDialog() == DialogResult.OK)
             {
-                axAcroPDF1.Visible = true;
-                axAcroPDF1.LoadFile(file.FileName);
+                pdfDocumentViewer1.Visible = true;
+                path = file.FileName;
+                pdfDocumentViewer1.LoadFromFile(path);
+
+                //axAcroPDF1.Visible = true;
+                //axAcroPDF1.LoadFile(path);
             }
+        }
+        private void PdfConvertbutton_Click(object sender, EventArgs e)
+        {
+            Richtextboxpanel.Visible = true;
+            var ocr = new AutoOcr();
+            var res = ocr.ReadPdf(path);
+            richTextBox.Text = res.Text.ToString();
+            //richTextBox.Text = ocr.Read(pictureBox.Image).ToString();
+        }
+
+        private void pdfDocumentViewer1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

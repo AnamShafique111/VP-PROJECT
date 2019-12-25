@@ -33,39 +33,48 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Exitbutton1 = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.Importbutton = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.Convertbutton = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Importbutton1 = new System.Windows.Forms.Button();
+            this.pdfDocumentViewer1 = new Spire.PdfViewer.Forms.PdfDocumentViewer();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.Exitbutton2 = new System.Windows.Forms.Button();
             this.richTextBox = new System.Windows.Forms.RichTextBox();
             this.Richtextboxpanel = new System.Windows.Forms.Panel();
+            this.Savebutton = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pdfImportbutton = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.PdfConvertbutton = new System.Windows.Forms.Button();
+            this.Outputpanel = new System.Windows.Forms.Panel();
+            this.OutputExitbutton = new System.Windows.Forms.Button();
+            this.buttonSave = new System.Windows.Forms.Button();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.pdfDocumentViewer1 = new Spire.PdfViewer.Forms.PdfDocumentViewer();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.saveFileDialog2 = new System.Windows.Forms.SaveFileDialog();
+            this.Inputpanel = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.JPGradioButton = new System.Windows.Forms.RadioButton();
+            this.PNGradioButton = new System.Windows.Forms.RadioButton();
+            this.PDFradioButton = new System.Windows.Forms.RadioButton();
+            this.BMPradioButton = new System.Windows.Forms.RadioButton();
+            this.TIFradioButton = new System.Windows.Forms.RadioButton();
+            this.radioButtonGIF = new System.Windows.Forms.RadioButton();
+            this.selectformatbutton = new System.Windows.Forms.Button();
+            this.ExitInputbutton = new System.Windows.Forms.Button();
+            this.WMFradioButton = new System.Windows.Forms.RadioButton();
+            this.JFIFradioButton = new System.Windows.Forms.RadioButton();
+            this.EMFradioButton = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.Richtextboxpanel.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.Outputpanel.SuspendLayout();
+            this.Inputpanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -104,9 +113,9 @@
             // 
             this.Exitbutton1.BackColor = System.Drawing.SystemColors.Control;
             this.Exitbutton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Exitbutton1.Location = new System.Drawing.Point(274, 511);
+            this.Exitbutton1.Location = new System.Drawing.Point(274, 462);
             this.Exitbutton1.Name = "Exitbutton1";
-            this.Exitbutton1.Size = new System.Drawing.Size(93, 51);
+            this.Exitbutton1.Size = new System.Drawing.Size(81, 36);
             this.Exitbutton1.TabIndex = 5;
             this.Exitbutton1.Text = "Exit";
             this.Exitbutton1.UseVisualStyleBackColor = false;
@@ -116,57 +125,21 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // Importbutton
-            // 
-            this.Importbutton.BackColor = System.Drawing.SystemColors.Control;
-            this.Importbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Importbutton.Location = new System.Drawing.Point(28, 6);
-            this.Importbutton.Name = "Importbutton";
-            this.Importbutton.Size = new System.Drawing.Size(147, 51);
-            this.Importbutton.TabIndex = 0;
-            this.Importbutton.Text = "Import ";
-            this.Importbutton.UseVisualStyleBackColor = false;
-            this.Importbutton.Click += new System.EventHandler(this.Importbutton_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox3.Image = global::VPProject.Properties.Resources.p1;
-            this.pictureBox3.Location = new System.Drawing.Point(224, 19);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(23, 27);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
             // Convertbutton
             // 
             this.Convertbutton.BackColor = System.Drawing.SystemColors.Control;
             this.Convertbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Convertbutton.Location = new System.Drawing.Point(28, 459);
+            this.Convertbutton.Location = new System.Drawing.Point(28, 450);
             this.Convertbutton.Name = "Convertbutton";
-            this.Convertbutton.Size = new System.Drawing.Size(147, 51);
+            this.Convertbutton.Size = new System.Drawing.Size(322, 32);
             this.Convertbutton.TabIndex = 3;
             this.Convertbutton.Text = "Extract";
             this.Convertbutton.UseVisualStyleBackColor = false;
             this.Convertbutton.Click += new System.EventHandler(this.Convertbutton_Click);
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox4.Image = global::VPProject.Properties.Resources.p6;
-            this.pictureBox4.Location = new System.Drawing.Point(50, 468);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(22, 27);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
-            // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(28, 49);
+            this.textBox1.Location = new System.Drawing.Point(0, 0);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(322, 20);
             this.textBox1.TabIndex = 5;
@@ -176,33 +149,53 @@
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.richTextBox1);
-            this.panel2.Controls.Add(this.pictureBox5);
-            this.panel2.Controls.Add(this.pictureBox6);
+            this.panel2.Controls.Add(this.selectformatbutton);
+            this.panel2.Controls.Add(this.Inputpanel);
             this.panel2.Controls.Add(this.pdfDocumentViewer1);
-            this.panel2.Controls.Add(this.richTextBox4);
-            this.panel2.Controls.Add(this.richTextBox3);
-            this.panel2.Controls.Add(this.richTextBox2);
-            this.panel2.Controls.Add(this.PdfConvertbutton);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.pdfImportbutton);
             this.panel2.Controls.Add(this.pictureBox);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Controls.Add(this.Convertbutton);
-            this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.Importbutton);
             this.panel2.Location = new System.Drawing.Point(0, 106);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(381, 583);
+            this.panel2.Size = new System.Drawing.Size(381, 522);
             this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // Importbutton1
+            // 
+            this.Importbutton1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Importbutton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Importbutton1.Location = new System.Drawing.Point(228, 290);
+            this.Importbutton1.Name = "Importbutton1";
+            this.Importbutton1.Size = new System.Drawing.Size(77, 35);
+            this.Importbutton1.TabIndex = 29;
+            this.Importbutton1.Text = "Import";
+            this.Importbutton1.UseVisualStyleBackColor = false;
+            this.Importbutton1.Click += new System.EventHandler(this.Importbutton1_Click_1);
+            // 
+            // pdfDocumentViewer1
+            // 
+            this.pdfDocumentViewer1.AutoScroll = true;
+            this.pdfDocumentViewer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            this.pdfDocumentViewer1.FormFillEnabled = false;
+            this.pdfDocumentViewer1.Location = new System.Drawing.Point(28, 92);
+            this.pdfDocumentViewer1.MultiPagesThreshold = 60;
+            this.pdfDocumentViewer1.Name = "pdfDocumentViewer1";
+            this.pdfDocumentViewer1.PageLayoutMode = Spire.PdfViewer.Forms.PageLayoutMode.SinglePageContinuous;
+            this.pdfDocumentViewer1.Size = new System.Drawing.Size(322, 344);
+            this.pdfDocumentViewer1.TabIndex = 25;
+            this.pdfDocumentViewer1.Text = "pdfDocumentViewer1";
+            this.pdfDocumentViewer1.Threshold = 60;
+            this.pdfDocumentViewer1.ViewerMode = Spire.PdfViewer.Forms.PdfViewerMode.PdfViewerMode.MultiPage;
+            this.pdfDocumentViewer1.Visible = false;
+            this.pdfDocumentViewer1.ZoomFactor = 1F;
+            this.pdfDocumentViewer1.ZoomMode = Spire.PdfViewer.Forms.ZoomMode.Default;
             // 
             // pictureBox
             // 
             this.pictureBox.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox.Location = new System.Drawing.Point(28, 115);
+            this.pictureBox.Location = new System.Drawing.Point(28, 92);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(322, 336);
+            this.pictureBox.Size = new System.Drawing.Size(322, 344);
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox.TabIndex = 1;
             this.pictureBox.TabStop = false;
@@ -212,9 +205,9 @@
             // 
             this.Exitbutton2.BackColor = System.Drawing.SystemColors.Control;
             this.Exitbutton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Exitbutton2.Location = new System.Drawing.Point(20, 514);
+            this.Exitbutton2.Location = new System.Drawing.Point(20, 450);
             this.Exitbutton2.Name = "Exitbutton2";
-            this.Exitbutton2.Size = new System.Drawing.Size(335, 51);
+            this.Exitbutton2.Size = new System.Drawing.Size(125, 32);
             this.Exitbutton2.TabIndex = 8;
             this.Exitbutton2.Text = "Exit";
             this.Exitbutton2.UseVisualStyleBackColor = false;
@@ -226,151 +219,315 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox.Location = new System.Drawing.Point(20, 19);
+            this.richTextBox.Location = new System.Drawing.Point(20, 49);
             this.richTextBox.Name = "richTextBox";
-            this.richTextBox.Size = new System.Drawing.Size(335, 489);
+            this.richTextBox.Size = new System.Drawing.Size(335, 384);
             this.richTextBox.TabIndex = 0;
             this.richTextBox.Text = "";
+            this.richTextBox.TextChanged += new System.EventHandler(this.richTextBox_TextChanged);
             // 
             // Richtextboxpanel
             // 
             this.Richtextboxpanel.BackColor = System.Drawing.Color.SpringGreen;
             this.Richtextboxpanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Richtextboxpanel.Controls.Add(this.Savebutton);
             this.Richtextboxpanel.Controls.Add(this.Exitbutton2);
             this.Richtextboxpanel.Controls.Add(this.richTextBox);
-            this.Richtextboxpanel.Location = new System.Drawing.Point(378, 106);
+            this.Richtextboxpanel.Location = new System.Drawing.Point(-2, -2);
             this.Richtextboxpanel.Name = "Richtextboxpanel";
-            this.Richtextboxpanel.Size = new System.Drawing.Size(382, 583);
+            this.Richtextboxpanel.Size = new System.Drawing.Size(382, 522);
             this.Richtextboxpanel.TabIndex = 6;
             this.Richtextboxpanel.Visible = false;
+            // 
+            // Savebutton
+            // 
+            this.Savebutton.BackColor = System.Drawing.SystemColors.Control;
+            this.Savebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Savebutton.Location = new System.Drawing.Point(230, 450);
+            this.Savebutton.Name = "Savebutton";
+            this.Savebutton.Size = new System.Drawing.Size(125, 32);
+            this.Savebutton.TabIndex = 9;
+            this.Savebutton.Text = "Save as";
+            this.Savebutton.UseVisualStyleBackColor = false;
+            this.Savebutton.Click += new System.EventHandler(this.Savebutton_Click);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.Richtextboxpanel);
+            this.panel3.Controls.Add(this.Outputpanel);
             this.panel3.Controls.Add(this.Exitbutton1);
+            this.panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(378, 106);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(382, 583);
+            this.panel3.Size = new System.Drawing.Size(382, 522);
             this.panel3.TabIndex = 6;
             // 
-            // pdfImportbutton
+            // Outputpanel
             // 
-            this.pdfImportbutton.BackColor = System.Drawing.SystemColors.Control;
-            this.pdfImportbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pdfImportbutton.Location = new System.Drawing.Point(205, 6);
-            this.pdfImportbutton.Name = "pdfImportbutton";
-            this.pdfImportbutton.Size = new System.Drawing.Size(145, 51);
-            this.pdfImportbutton.TabIndex = 12;
-            this.pdfImportbutton.Text = "Import";
-            this.pdfImportbutton.UseVisualStyleBackColor = false;
-            this.pdfImportbutton.Click += new System.EventHandler(this.pdfImportbutton_Click);
+            this.Outputpanel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.Outputpanel.Controls.Add(this.OutputExitbutton);
+            this.Outputpanel.Controls.Add(this.buttonSave);
+            this.Outputpanel.Controls.Add(this.radioButton4);
+            this.Outputpanel.Controls.Add(this.radioButton3);
+            this.Outputpanel.Controls.Add(this.radioButton2);
+            this.Outputpanel.Controls.Add(this.label2);
+            this.Outputpanel.Controls.Add(this.radioButton1);
+            this.Outputpanel.Location = new System.Drawing.Point(20, 49);
+            this.Outputpanel.Name = "Outputpanel";
+            this.Outputpanel.Size = new System.Drawing.Size(324, 387);
+            this.Outputpanel.TabIndex = 6;
+            this.Outputpanel.Visible = false;
             // 
-            // pictureBox2
+            // OutputExitbutton
             // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox2.Image = global::VPProject.Properties.Resources.p1;
-            this.pictureBox2.Location = new System.Drawing.Point(50, 19);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(22, 27);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 16;
-            this.pictureBox2.TabStop = false;
+            this.OutputExitbutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.OutputExitbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OutputExitbutton.Location = new System.Drawing.Point(21, 332);
+            this.OutputExitbutton.Name = "OutputExitbutton";
+            this.OutputExitbutton.Size = new System.Drawing.Size(77, 36);
+            this.OutputExitbutton.TabIndex = 11;
+            this.OutputExitbutton.Text = "Exit";
+            this.OutputExitbutton.UseVisualStyleBackColor = false;
+            this.OutputExitbutton.Click += new System.EventHandler(this.OutputExitbutton_Click);
             // 
-            // PdfConvertbutton
+            // buttonSave
             // 
-            this.PdfConvertbutton.BackColor = System.Drawing.SystemColors.Control;
-            this.PdfConvertbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PdfConvertbutton.Location = new System.Drawing.Point(205, 459);
-            this.PdfConvertbutton.Name = "PdfConvertbutton";
-            this.PdfConvertbutton.Size = new System.Drawing.Size(145, 51);
-            this.PdfConvertbutton.TabIndex = 17;
-            this.PdfConvertbutton.Text = "Extract";
-            this.PdfConvertbutton.UseVisualStyleBackColor = false;
-            this.PdfConvertbutton.Click += new System.EventHandler(this.PdfConvertbutton_Click);
+            this.buttonSave.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSave.Location = new System.Drawing.Point(227, 333);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(77, 36);
+            this.buttonSave.TabIndex = 10;
+            this.buttonSave.Text = "Save";
+            this.buttonSave.UseVisualStyleBackColor = false;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
-            // richTextBox2
+            // radioButton4
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(205, 514);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(145, 46);
-            this.richTextBox2.TabIndex = 22;
-            this.richTextBox2.Text = "For Format:\nPDF";
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(41, 181);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(89, 19);
+            this.radioButton4.TabIndex = 4;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Plain Text";
+            this.radioButton4.UseVisualStyleBackColor = true;
             // 
-            // richTextBox3
+            // radioButton3
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(28, 63);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(147, 46);
-            this.richTextBox3.TabIndex = 23;
-            this.richTextBox3.Text = "For Formats:\nJPEG/JPG , PNG, GIF, \nBMP, TIF/TIFF, PCX";
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(41, 156);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(120, 19);
+            this.radioButton3.TabIndex = 3;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "RTF Document";
+            this.radioButton3.UseVisualStyleBackColor = true;
             // 
-            // richTextBox4
+            // radioButton2
             // 
-            this.richTextBox4.Location = new System.Drawing.Point(205, 63);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(145, 46);
-            this.richTextBox4.TabIndex = 24;
-            this.richTextBox4.Text = "For Format:\nPDF";
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(41, 133);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(188, 19);
+            this.radioButton2.TabIndex = 2;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = " Microsoft PDF Document";
+            this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // pdfDocumentViewer1
+            // label2
             // 
-            this.pdfDocumentViewer1.AutoScroll = true;
-            this.pdfDocumentViewer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
-            this.pdfDocumentViewer1.FormFillEnabled = false;
-            this.pdfDocumentViewer1.Location = new System.Drawing.Point(28, 115);
-            this.pdfDocumentViewer1.MultiPagesThreshold = 60;
-            this.pdfDocumentViewer1.Name = "pdfDocumentViewer1";
-            this.pdfDocumentViewer1.PageLayoutMode = Spire.PdfViewer.Forms.PageLayoutMode.SinglePageContinuous;
-            this.pdfDocumentViewer1.Size = new System.Drawing.Size(322, 336);
-            this.pdfDocumentViewer1.TabIndex = 25;
-            this.pdfDocumentViewer1.Text = "pdfDocumentViewer1";
-            this.pdfDocumentViewer1.Threshold = 60;
-            this.pdfDocumentViewer1.ViewerMode = Spire.PdfViewer.Forms.PdfViewerMode.PdfViewerMode.MultiPage;
-            this.pdfDocumentViewer1.Visible = false;
-            this.pdfDocumentViewer1.ZoomFactor = 1F;
-            this.pdfDocumentViewer1.ZoomMode = Spire.PdfViewer.Forms.ZoomMode.Default;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(37, 75);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(229, 20);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Supported Output Formats:";
             // 
-            // pictureBox6
+            // radioButton1
             // 
-            this.pictureBox6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox6.Image = global::VPProject.Properties.Resources.p1;
-            this.pictureBox6.Location = new System.Drawing.Point(225, 19);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(22, 27);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 26;
-            this.pictureBox6.TabStop = false;
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(41, 108);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(194, 19);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = " Microsoft Word Document";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // pictureBox5
+            // Inputpanel
             // 
-            this.pictureBox5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox5.Image = global::VPProject.Properties.Resources.p6;
-            this.pictureBox5.Location = new System.Drawing.Point(225, 468);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(22, 27);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 27;
-            this.pictureBox5.TabStop = false;
+            this.Inputpanel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.Inputpanel.Controls.Add(this.EMFradioButton);
+            this.Inputpanel.Controls.Add(this.JFIFradioButton);
+            this.Inputpanel.Controls.Add(this.WMFradioButton);
+            this.Inputpanel.Controls.Add(this.ExitInputbutton);
+            this.Inputpanel.Controls.Add(this.radioButtonGIF);
+            this.Inputpanel.Controls.Add(this.TIFradioButton);
+            this.Inputpanel.Controls.Add(this.Importbutton1);
+            this.Inputpanel.Controls.Add(this.BMPradioButton);
+            this.Inputpanel.Controls.Add(this.PDFradioButton);
+            this.Inputpanel.Controls.Add(this.PNGradioButton);
+            this.Inputpanel.Controls.Add(this.textBox1);
+            this.Inputpanel.Controls.Add(this.JPGradioButton);
+            this.Inputpanel.Controls.Add(this.label3);
+            this.Inputpanel.Location = new System.Drawing.Point(28, 92);
+            this.Inputpanel.Name = "Inputpanel";
+            this.Inputpanel.Size = new System.Drawing.Size(322, 344);
+            this.Inputpanel.TabIndex = 31;
+            this.Inputpanel.Visible = false;
             // 
-            // richTextBox1
+            // label3
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(28, 514);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(145, 46);
-            this.richTextBox1.TabIndex = 28;
-            this.richTextBox1.Text = "For Formats:\nJPEG/JPG , PNG, GIF, \nBMP, TIF/TIFF, PCX";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(37, 75);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(216, 20);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Supported Input Formats:";
+            // 
+            // JPGradioButton
+            // 
+            this.JPGradioButton.AutoSize = true;
+            this.JPGradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.JPGradioButton.Location = new System.Drawing.Point(41, 108);
+            this.JPGradioButton.Name = "JPGradioButton";
+            this.JPGradioButton.Size = new System.Drawing.Size(90, 19);
+            this.JPGradioButton.TabIndex = 3;
+            this.JPGradioButton.TabStop = true;
+            this.JPGradioButton.Text = "JPEG/JPG";
+            this.JPGradioButton.UseVisualStyleBackColor = true;
+            // 
+            // PNGradioButton
+            // 
+            this.PNGradioButton.AutoSize = true;
+            this.PNGradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PNGradioButton.Location = new System.Drawing.Point(41, 131);
+            this.PNGradioButton.Name = "PNGradioButton";
+            this.PNGradioButton.Size = new System.Drawing.Size(54, 19);
+            this.PNGradioButton.TabIndex = 4;
+            this.PNGradioButton.TabStop = true;
+            this.PNGradioButton.Text = "PNG";
+            this.PNGradioButton.UseVisualStyleBackColor = true;
+            // 
+            // PDFradioButton
+            // 
+            this.PDFradioButton.AutoSize = true;
+            this.PDFradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PDFradioButton.Location = new System.Drawing.Point(41, 156);
+            this.PDFradioButton.Name = "PDFradioButton";
+            this.PDFradioButton.Size = new System.Drawing.Size(52, 19);
+            this.PDFradioButton.TabIndex = 5;
+            this.PDFradioButton.TabStop = true;
+            this.PDFradioButton.Text = "PDF";
+            this.PDFradioButton.UseVisualStyleBackColor = true;
+            // 
+            // BMPradioButton
+            // 
+            this.BMPradioButton.AutoSize = true;
+            this.BMPradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMPradioButton.Location = new System.Drawing.Point(40, 181);
+            this.BMPradioButton.Name = "BMPradioButton";
+            this.BMPradioButton.Size = new System.Drawing.Size(55, 19);
+            this.BMPradioButton.TabIndex = 7;
+            this.BMPradioButton.TabStop = true;
+            this.BMPradioButton.Text = "BMP";
+            this.BMPradioButton.UseVisualStyleBackColor = true;
+            // 
+            // TIFradioButton
+            // 
+            this.TIFradioButton.AutoSize = true;
+            this.TIFradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TIFradioButton.Location = new System.Drawing.Point(40, 206);
+            this.TIFradioButton.Name = "TIFradioButton";
+            this.TIFradioButton.Size = new System.Drawing.Size(77, 19);
+            this.TIFradioButton.TabIndex = 8;
+            this.TIFradioButton.TabStop = true;
+            this.TIFradioButton.Text = "TIFF/TIF";
+            this.TIFradioButton.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonGIF
+            // 
+            this.radioButtonGIF.AutoSize = true;
+            this.radioButtonGIF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonGIF.Location = new System.Drawing.Point(185, 108);
+            this.radioButtonGIF.Name = "radioButtonGIF";
+            this.radioButtonGIF.Size = new System.Drawing.Size(47, 19);
+            this.radioButtonGIF.TabIndex = 10;
+            this.radioButtonGIF.TabStop = true;
+            this.radioButtonGIF.Text = "GIF";
+            this.radioButtonGIF.UseVisualStyleBackColor = true;
+            // 
+            // selectformatbutton
+            // 
+            this.selectformatbutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.selectformatbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectformatbutton.Location = new System.Drawing.Point(28, 49);
+            this.selectformatbutton.Name = "selectformatbutton";
+            this.selectformatbutton.Size = new System.Drawing.Size(322, 32);
+            this.selectformatbutton.TabIndex = 32;
+            this.selectformatbutton.Text = "Select Format";
+            this.selectformatbutton.UseVisualStyleBackColor = false;
+            this.selectformatbutton.Click += new System.EventHandler(this.selectformatbutton_Click);
+            // 
+            // ExitInputbutton
+            // 
+            this.ExitInputbutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ExitInputbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitInputbutton.Location = new System.Drawing.Point(19, 290);
+            this.ExitInputbutton.Name = "ExitInputbutton";
+            this.ExitInputbutton.Size = new System.Drawing.Size(77, 36);
+            this.ExitInputbutton.TabIndex = 30;
+            this.ExitInputbutton.Text = "Exit";
+            this.ExitInputbutton.UseVisualStyleBackColor = false;
+            this.ExitInputbutton.Click += new System.EventHandler(this.ExitInputbutton_Click);
+            // 
+            // WMFradioButton
+            // 
+            this.WMFradioButton.AutoSize = true;
+            this.WMFradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WMFradioButton.Location = new System.Drawing.Point(185, 131);
+            this.WMFradioButton.Name = "WMFradioButton";
+            this.WMFradioButton.Size = new System.Drawing.Size(57, 19);
+            this.WMFradioButton.TabIndex = 31;
+            this.WMFradioButton.TabStop = true;
+            this.WMFradioButton.Text = "WMF";
+            this.WMFradioButton.UseVisualStyleBackColor = true;
+            // 
+            // JFIFradioButton
+            // 
+            this.JFIFradioButton.AutoSize = true;
+            this.JFIFradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.JFIFradioButton.Location = new System.Drawing.Point(185, 156);
+            this.JFIFradioButton.Name = "JFIFradioButton";
+            this.JFIFradioButton.Size = new System.Drawing.Size(52, 19);
+            this.JFIFradioButton.TabIndex = 32;
+            this.JFIFradioButton.TabStop = true;
+            this.JFIFradioButton.Text = "JFIF";
+            this.JFIFradioButton.UseVisualStyleBackColor = true;
+            // 
+            // EMFradioButton
+            // 
+            this.EMFradioButton.AutoSize = true;
+            this.EMFradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EMFradioButton.Location = new System.Drawing.Point(185, 181);
+            this.EMFradioButton.Name = "EMFradioButton";
+            this.EMFradioButton.Size = new System.Drawing.Size(54, 19);
+            this.EMFradioButton.TabIndex = 33;
+            this.EMFradioButton.TabStop = true;
+            this.EMFradioButton.Text = "EMF";
+            this.EMFradioButton.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(759, 686);
-            this.Controls.Add(this.Richtextboxpanel);
+            this.ClientSize = new System.Drawing.Size(759, 627);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -381,16 +538,14 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.Richtextboxpanel.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.Outputpanel.ResumeLayout(false);
+            this.Outputpanel.PerformLayout();
+            this.Inputpanel.ResumeLayout(false);
+            this.Inputpanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -402,10 +557,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Exitbutton1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Button Importbutton;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button Convertbutton;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button Exitbutton2;
@@ -413,17 +565,32 @@
         private System.Windows.Forms.Panel Richtextboxpanel;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox;
-        private System.Windows.Forms.Button pdfImportbutton;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button PdfConvertbutton;
-        private System.Windows.Forms.RichTextBox richTextBox4;
-        private System.Windows.Forms.RichTextBox richTextBox3;
-        private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private Spire.PdfViewer.Forms.PdfDocumentViewer pdfDocumentViewer1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Button Savebutton;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog2;
+        private System.Windows.Forms.Panel Outputpanel;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Button Importbutton1;
+        private System.Windows.Forms.Button buttonSave;
+        private System.Windows.Forms.Button OutputExitbutton;
+        private System.Windows.Forms.Panel Inputpanel;
+        private System.Windows.Forms.RadioButton TIFradioButton;
+        private System.Windows.Forms.RadioButton BMPradioButton;
+        private System.Windows.Forms.RadioButton PDFradioButton;
+        private System.Windows.Forms.RadioButton PNGradioButton;
+        private System.Windows.Forms.RadioButton JPGradioButton;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.RadioButton radioButtonGIF;
+        private System.Windows.Forms.Button selectformatbutton;
+        private System.Windows.Forms.Button ExitInputbutton;
+        private System.Windows.Forms.RadioButton WMFradioButton;
+        private System.Windows.Forms.RadioButton JFIFradioButton;
+        private System.Windows.Forms.RadioButton EMFradioButton;
     }
 }
 

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using IronOcr;
 using System.IO;
 using Xceed.Words.NET;
+using PdfSharp.Pdf;
 
 namespace VPProject
 {
@@ -49,7 +50,6 @@ namespace VPProject
             {
                 OpenFileDialog file = new OpenFileDialog();
                 file.Filter = "png files|*.png";
-                //file.Filter = "image files(*.png)|*.png";
                 if (file.ShowDialog() == DialogResult.OK)
                 {
                     textBox1.Text = file.FileName; ;
@@ -58,10 +58,8 @@ namespace VPProject
             }
             else if (PDFradioButton.Checked == true)
             {
-                //string path;
                 OpenFileDialog file = new OpenFileDialog();
                 file.Filter = "pdf files|*.pdf";
-                //file.Filter = "image files(*.pdf)|*.pdf";
                 if (file.ShowDialog() == DialogResult.OK)
                 {
                     pdfDocumentViewer1.Visible = true;
@@ -73,10 +71,9 @@ namespace VPProject
             {
                 OpenFileDialog file = new OpenFileDialog();
                 file.Filter = "bmp files|*.bmp";
-                //file.Filter = "image files(*.png)|*.png";
                 if (file.ShowDialog() == DialogResult.OK)
                 {
-                    textBox1.Text = file.FileName; ;
+                    textBox1.Text = file.FileName;
                     pictureBox.ImageLocation = textBox1.Text;
                 }
             }
@@ -84,7 +81,6 @@ namespace VPProject
             {
                 OpenFileDialog file = new OpenFileDialog();
                 file.Filter = "tif files|*.tif";
-                //file.Filter = "image files(*.png)|*.png";
                 if (file.ShowDialog() == DialogResult.OK)
                 {
                     textBox1.Text = file.FileName; ;
@@ -94,8 +90,7 @@ namespace VPProject
             else if (radioButtonGIF.Checked == true)
             {
                 OpenFileDialog file = new OpenFileDialog();
-                file.Filter = "gif files|*.gif";
-                //file.Filter = "image files(*.png)|*.png";
+                file.Filter = "gif files|*.gif";        
                 if (file.ShowDialog() == DialogResult.OK)
                 {
                     textBox1.Text = file.FileName; ;
@@ -105,7 +100,6 @@ namespace VPProject
             else if (WMFradioButton.Checked == true)
             {
                 OpenFileDialog file = new OpenFileDialog();
-                //file.Filter = "pcx files|*.pcx";
                 file.Filter = "image files(*.wmf)|*.wmf";
                 if (file.ShowDialog() == DialogResult.OK)
                 {
@@ -116,7 +110,6 @@ namespace VPProject
             else if (JFIFradioButton.Checked == true)
             {
                 OpenFileDialog file = new OpenFileDialog();
-                //file.Filter = "pcx files|*.pcx";
                 file.Filter = "image files(*.jfif)|*.jfif";
                 if (file.ShowDialog() == DialogResult.OK)
                 {
@@ -127,7 +120,6 @@ namespace VPProject
             else if (EMFradioButton.Checked == true)
             {
                 OpenFileDialog file = new OpenFileDialog();
-                //file.Filter = "pcx files|*.pcx";
                 file.Filter = "image files(*.emf)|*.emf";
                 if (file.ShowDialog() == DialogResult.OK)
                 {
@@ -234,13 +226,56 @@ namespace VPProject
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            if (radioButton1.Checked == true)
+            if (WordradioButton.Checked == true)
             {
-                using (DocX document = DocX.Create("new.doc"))
+                SaveFileDialog word = new SaveFileDialog();
+                word.DefaultExt = "*.doc";
+                word.Filter = "DOC files|*.doc";
                 {
-                    document.InsertParagraph(richTextBox.Text.ToString());
-                    document.Save();
-                    MessageBox.Show("File has created");
+                    if (word.ShowDialog() == DialogResult.OK)
+                    {
+                        richTextBox.SaveFile(word.FileName, RichTextBoxStreamType.PlainText);
+                        MessageBox.Show("File has created");
+                    }
+                }
+            }
+            //else if (radioButtonPDF.Checked == true)
+            //{
+            //    SaveFileDialog pdf = new SaveFileDialog();
+            //    pdf.DefaultExt = "*.pdf";
+            //    pdf.Filter = "PDF files|*.pdf";
+            //    {
+            //        if (pdf.ShowDialog() == DialogResult.OK)
+            //        {
+            //            richTextBox.SaveFile(pdf.FileName, RichTextBoxStreamType.PlainText);
+            //            MessageBox.Show("File has created");
+            //        }
+            //    }
+            //}
+            else if (RTFradioButton.Checked == true)
+            {
+                SaveFileDialog rtf = new SaveFileDialog();
+                rtf.DefaultExt = "*.rtf";
+                rtf.Filter = "RTF files|*.rtf";
+                {
+                    if (rtf.ShowDialog() == DialogResult.OK)
+                    {
+                        richTextBox.SaveFile(rtf.FileName, RichTextBoxStreamType.PlainText);
+                        MessageBox.Show("File has created");
+                    }
+                }
+            }
+            else if (TextradioButton.Checked == true)
+            {
+                SaveFileDialog txt = new SaveFileDialog();
+                txt.DefaultExt = "*.txt";
+                txt.Filter = "TXT files|*.txt";
+                {
+                    if (txt.ShowDialog() == DialogResult.OK)
+                    {
+                        richTextBox.SaveFile(txt.FileName, RichTextBoxStreamType.PlainText);
+                        MessageBox.Show("File has created");
+                    }
                 }
             }
         }

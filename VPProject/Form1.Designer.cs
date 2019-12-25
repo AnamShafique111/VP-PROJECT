@@ -47,11 +47,10 @@
             this.Outputpanel = new System.Windows.Forms.Panel();
             this.OutputExitbutton = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.TextradioButton = new System.Windows.Forms.RadioButton();
+            this.RTFradioButton = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.WordradioButton = new System.Windows.Forms.RadioButton();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.saveFileDialog2 = new System.Windows.Forms.SaveFileDialog();
             this.Inputpanel = new System.Windows.Forms.Panel();
@@ -269,11 +268,10 @@
             this.Outputpanel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.Outputpanel.Controls.Add(this.OutputExitbutton);
             this.Outputpanel.Controls.Add(this.buttonSave);
-            this.Outputpanel.Controls.Add(this.radioButton4);
-            this.Outputpanel.Controls.Add(this.radioButton3);
-            this.Outputpanel.Controls.Add(this.radioButton2);
+            this.Outputpanel.Controls.Add(this.TextradioButton);
+            this.Outputpanel.Controls.Add(this.RTFradioButton);
             this.Outputpanel.Controls.Add(this.label2);
-            this.Outputpanel.Controls.Add(this.radioButton1);
+            this.Outputpanel.Controls.Add(this.WordradioButton);
             this.Outputpanel.Location = new System.Drawing.Point(20, 49);
             this.Outputpanel.Name = "Outputpanel";
             this.Outputpanel.Size = new System.Drawing.Size(324, 387);
@@ -304,38 +302,27 @@
             this.buttonSave.UseVisualStyleBackColor = false;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
-            // radioButton4
+            // TextradioButton
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(41, 181);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(89, 19);
-            this.radioButton4.TabIndex = 4;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Plain Text";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.TextradioButton.AutoSize = true;
+            this.TextradioButton.Location = new System.Drawing.Point(41, 158);
+            this.TextradioButton.Name = "TextradioButton";
+            this.TextradioButton.Size = new System.Drawing.Size(89, 19);
+            this.TextradioButton.TabIndex = 4;
+            this.TextradioButton.TabStop = true;
+            this.TextradioButton.Text = "Plain Text";
+            this.TextradioButton.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // RTFradioButton
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(41, 156);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(120, 19);
-            this.radioButton3.TabIndex = 3;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "RTF Document";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(41, 133);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(188, 19);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = " Microsoft PDF Document";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.RTFradioButton.AutoSize = true;
+            this.RTFradioButton.Location = new System.Drawing.Point(41, 133);
+            this.RTFradioButton.Name = "RTFradioButton";
+            this.RTFradioButton.Size = new System.Drawing.Size(120, 19);
+            this.RTFradioButton.TabIndex = 3;
+            this.RTFradioButton.TabStop = true;
+            this.RTFradioButton.Text = "RTF Document";
+            this.RTFradioButton.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -347,16 +334,16 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Supported Output Formats:";
             // 
-            // radioButton1
+            // WordradioButton
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(41, 108);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(194, 19);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = " Microsoft Word Document";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.WordradioButton.AutoSize = true;
+            this.WordradioButton.Location = new System.Drawing.Point(41, 108);
+            this.WordradioButton.Name = "WordradioButton";
+            this.WordradioButton.Size = new System.Drawing.Size(194, 19);
+            this.WordradioButton.TabIndex = 0;
+            this.WordradioButton.TabStop = true;
+            this.WordradioButton.Text = " Microsoft Word Document";
+            this.WordradioButton.UseVisualStyleBackColor = true;
             // 
             // Inputpanel
             // 
@@ -570,11 +557,10 @@
         private System.Windows.Forms.Button Savebutton;
         private System.Windows.Forms.SaveFileDialog saveFileDialog2;
         private System.Windows.Forms.Panel Outputpanel;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton TextradioButton;
+        private System.Windows.Forms.RadioButton RTFradioButton;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton WordradioButton;
         private System.Windows.Forms.Button Importbutton1;
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Button OutputExitbutton;

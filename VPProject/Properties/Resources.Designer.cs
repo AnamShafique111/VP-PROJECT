@@ -63,6 +63,26 @@ namespace VPProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Orignal {
+            get {
+                object obj = ResourceManager.GetObject("Orignal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Orignal_Image {
+            get {
+                object obj = ResourceManager.GetObject("Orignal Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap p1 {
             get {
                 object obj = ResourceManager.GetObject("p1", resourceCulture);
@@ -86,6 +106,16 @@ namespace VPProject.Properties {
         internal static System.Drawing.Bitmap p6 {
             get {
                 object obj = ResourceManager.GetObject("p6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap picture_for_picture_box {
+            get {
+                object obj = ResourceManager.GetObject("picture-for-picture-box", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -39,7 +39,6 @@ namespace VPProject
             {
                 OpenFileDialog file = new OpenFileDialog();
                 file.Filter = "jpg files|*.jpg";
-                //file.Filter = "image files(*.jpg;*.jpeg)|*.jpg;*.jpeg";
                 if (file.ShowDialog() == DialogResult.OK)
                 {
                     textBox1.Text = file.FileName; ;
@@ -52,7 +51,7 @@ namespace VPProject
                 file.Filter = "png files|*.png";
                 if (file.ShowDialog() == DialogResult.OK)
                 {
-                    textBox1.Text = file.FileName; ;
+                    textBox1.Text = file.FileName;
                     pictureBox.ImageLocation = textBox1.Text;
                 }
             }
@@ -97,30 +96,11 @@ namespace VPProject
                     pictureBox.ImageLocation = textBox1.Text;
                 }
             }
-            else if (WMFradioButton.Checked == true)
-            {
-                OpenFileDialog file = new OpenFileDialog();
-                file.Filter = "image files(*.wmf)|*.wmf";
-                if (file.ShowDialog() == DialogResult.OK)
-                {
-                    textBox1.Text = file.FileName; ;
-                    pictureBox.ImageLocation = textBox1.Text;
-                }
-            }
+           
             else if (JFIFradioButton.Checked == true)
             {
                 OpenFileDialog file = new OpenFileDialog();
                 file.Filter = "image files(*.jfif)|*.jfif";
-                if (file.ShowDialog() == DialogResult.OK)
-                {
-                    textBox1.Text = file.FileName; ;
-                    pictureBox.ImageLocation = textBox1.Text;
-                }
-            }
-            else if (EMFradioButton.Checked == true)
-            {
-                OpenFileDialog file = new OpenFileDialog();
-                file.Filter = "image files(*.emf)|*.emf";
                 if (file.ShowDialog() == DialogResult.OK)
                 {
                     textBox1.Text = file.FileName; ;
@@ -168,19 +148,7 @@ namespace VPProject
                 var ocr = new AutoOcr();
                 richTextBox.Text = ocr.Read(pictureBox.Image).ToString();
             }
-            else if (WMFradioButton.Checked == true)
-            {
-                Richtextboxpanel.Visible = true;
-                var ocr = new AutoOcr();
-                richTextBox.Text = ocr.Read(pictureBox.Image).ToString();
-            }
             else if (JFIFradioButton.Checked == true)
-            {
-                Richtextboxpanel.Visible = true;
-                var ocr = new AutoOcr();
-                richTextBox.Text = ocr.Read(pictureBox.Image).ToString();
-            }
-            else if (EMFradioButton.Checked == true)
             {
                 Richtextboxpanel.Visible = true;
                 var ocr = new AutoOcr();
@@ -188,7 +156,7 @@ namespace VPProject
             }
         }
 
-        private void Exitbutton2_Click(object sender, EventArgs e)
+    private void Exitbutton2_Click(object sender, EventArgs e)
         {
             Richtextboxpanel.Visible = false;
         }
@@ -299,5 +267,13 @@ namespace VPProject
         {
             Inputpanel.Visible = false;
         }
+
+        private void ResetButton_Click(object sender, EventArgs e)
+        {
+            pictureBox.Image = null;
+            pdfDocumentViewer1.Visible=false;
+        }
+
+        
     }
 }
